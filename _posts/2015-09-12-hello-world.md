@@ -5,7 +5,7 @@ date:   2015-09-12 14:34:00
 categories: site-update cracking-the-coding-interview git c-sharp
 ---
 
-I've decided to put together a personal site in order to throw some of my development thoughts up somewhere as well as offer a diversion from the problems I've been working through in [Cracking the Coding Interview 6^th Edition]. It's been 2-3 weeks that I've been putting in time every day to work through the book so I need a change of pace to keep from burning out.
+I've decided to put together a personal site in order to throw some of my development thoughts up somewhere as well as offer a diversion from the problems I've been working through in [Cracking the Coding Interview 6<sup>th</sup> Edition][ctci]. It's been 2-3 weeks that I've been putting in time every day to work through the book so I need a change of pace to keep from burning out.
 
 Since this is my first post, let's run through my current and recent efforts to start producing widely available proof that I won't panic when presented with FizzBuzz. Hopefully my writing will speak to my abilities outside of software development.
 
@@ -26,3 +26,5 @@ In my current day job I've been the sole developer for 4 years which has always 
 Since I made the decision to seek more challenging work, I wanted to get together some sort of portfolio of work I could show to potential employers. Of course, it's hard not to go with GitHub for that in this day and age so I took it as an opportunity to learn Git and finally get experience with a distributed VCS.
 
 I have to admit, I love it. It's been so easy to get started with and as I've been digging into things like the GitHub flow, I'm getting more and more anxious to finally move into a team environment where I can be part of something more collaborative. This is a scratch I'm sure could be itched by finding an interesting open source project to contribute to, but I haven't had luck with that yet. For now, my focus is on finding an interesting job to move to when my tenure with my current company is up.
+
+[ctci]: http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850
