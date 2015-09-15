@@ -1,0 +1,44 @@
+body {
+	width: 800px;
+	margin: auto;
+}
+
+nav .nav-current {
+	border-color: #DDDDFF;
+	background-color: #DDDDFF;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+nav a:hover {
+
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	text-align: center;
+	border-style: none solid solid solid;
+	border-color: #DDDDFF;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#header {
+	text-align: center;
+	background-color: #DDDDFF;
+	padding: 1.5em 0;
+}
+
+#header h1, h2, h3, h4 {
+	margin: 0;
+}

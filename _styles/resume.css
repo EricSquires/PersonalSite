@@ -1,0 +1,78 @@
+.resume-header {
+	text-align: center;
+}
+
+.resume-header .fn {
+	display: none;
+}
+
+.resume-section-header {
+	font-variant: small-caps;
+	font-weight: bold;
+
+}
+
+.resume-section-header::after {
+	content: "";
+	display: block;
+	height: 1px;
+	margin: 0 0 5px 0;
+	background: black;
+}
+
+.resume-section::after {
+	content: "";
+	display: block;
+	margin-bottom: 1em;
+}
+
+.resume-strengths-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.resume-strength-title {
+	display: inline-block;
+	width: 200px;
+	border-right: black solid 1px;
+	font-weight: bold;
+}
+
+.resume-job-title {
+	font-weight: bold;
+}
+
+.resume-job-span {
+	font-style: italic;
+	float: right;
+}
+
+.resume-job-location {
+	float: right;
+}
+
+.resume-job-tech {
+	margin-top: 1em;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.resume-job-tech::after {
+	content: "";
+	display: block;
+	height: 1px;
+	width: 75%;
+	margin: auto;
+	background-color: #AAA;
+}
+
+.resume-job-duty-list {
+	list-style-type: "+";
+	padding-left: 1em;
+}
+
+.resume-job-duty-list li {
+	padding-left: 1em;
+	margin-bottom: 0.5em;
+}
