@@ -25,6 +25,7 @@
     </ul>
   </nav>
   <div id="content">
+    <!--
     <div class="resume-header">
       <div id="hcard-Eric-Squires" class="vcard">
         <h2><span class="fn">Eric Squires</span></h2>
@@ -36,38 +37,39 @@
       </div>
       <a href="https://github.com/EricSquires">https://github.com/EricSquires</a>
     </div>
-
+    -->
     <div class="resume-section">
-      <div class="resume-section-header">Technical Strengths</div>
+      <div class="header">Technical Strengths</div>
       <ul class="resume-strengths-list">
         <li>
-        <span class="resume-strength-title">Computer Languages</span>
-        <span class="resume-strength">C#, VBA, HTML, CSS, JS, Python</span>
+          <span class="resume-strength-title">Computer Languages</span>
+          <span class="resume-strength">C#, VBA, HTML, CSS, JS, Python</span>
         </li>
         <li>
-        <span class="resume-strength-title">Databases</span>
-        <span class="resume-strength">Oracle</span>
+          <span class="resume-strength-title">Databases</span>
+          <span class="resume-strength">Oracle</span>
         </li>
         <li>
-        <span class="resume-strength-title">Tools</span>
-        <span class="resume-strength">Git, TFS, SVN, Visual Studio, Crystal Reports</span>
+          <span class="resume-strength-title">Tools</span>
+          <span class="resume-strength">Git, TFS, SVN, Visual Studio, Crystal Reports</span>
         </li>
       </div>
     </div>
 
     <div class="resume-section">
-      <div class="resume-section-header">Experience</div>
+      <div class="header">Experience</div>
+      
+      <!-- SPECO -->
       <div class="resume-job">
-        <div class "resume-job-header">
-          <div class="resume-job-header-row">
-            <span class="resume-job-header-cell resume-job-title">Software Engineer</span>
-            <span class="resume-job-header-cell resume-job-span">July 2011 - Present</span>
+        <div class="header">
+          <div>
+            <span class="resume-job-title">Software Engineer</span>
+            <span class="resume-job-company"><a href="http://schneiderequip.com/">Schneider Packaging Equipment, Inc.</a></span>
           </div>
-          <div class="resume-job-header-row">
-            <span class="resume-job-header-cell resume-job-company">Schneider Packaging Equipment, Inc.</span>
-            <span class="resume-job-header-cell resume-job-location">Syracuse, NY</span>
+          <div>
+            <span class="resume-job-tech">C#, WPF, Oracle, HTML, CSS, JS, VBA, Crystal Reports</span>
+            <span class="resume-job-span">July 2011 - Present</span>
           </div>
-          <div class="resume-job-tech">C#, WPF, Oracle, HTML, CSS, JS, VBA, Crystal Reports</span>
         </div>
         <div class="resume-job-summary">
           As sole developer for a medium sized business, responsible for working with employees across the breadth of the company to identify areas for improvement, assess business needs, gather requirements and get feedback on projects as they’re developed. Developed company libraries for easy code reuse in both C# and VB.
@@ -87,21 +89,82 @@
           </li>
           <li>
            Worked with internal and external teams from various companies as technical advisor and liaison on various projects including migration to a new CRM system and development of a new product requiring custom hardware and an embedded software solution.
-         </li>
-         <li>
+          </li>
+          <li>
           Created series of webpages utilizing CSS, JS and jQuery enabling user access to Crystal Reports. The pages track most accessed and recently accessed reports as well as redirecting from deprecated reports to their replacements.
-        </li>
-        <li>
+          </li>
+          <li>
           Maintained legacy VBA in addition to developing new functionality and a library of VBA modules for code reuse.
-        </li>
+          </li>
+        </ul>
       </div>
+      
+      <!-- TSS -->
+      <div class="resume-job">
+        <div class="header">
+          <div class="resume-job-header-row">
+            <span class="resume-job-title">Software Tester</span>
+            <span class="resume-job-company">The Software Specialists</span>
+          </div>
+          <div class="resume-job-header-row">
+            <span class="resume-job-tech">JavaScript, C</span>
+            <span class="resume-job-span">November 2010 - June 2011</span>
+          </div>
+        </div>
+        <div class="resume-job-summary">
+          Worked on contract to test aircraft radio software. Tasks ranged from code inspection in C, automated test authoring in JavaScript and advising peers on testing methodology.
+        </div>
+        <ul class="resume-job-duty-list">
+          <li>
+            Worked with developers to troubleshoot automated tests written in JS and pinpoint deficiencies in software implementation.
+          </li>
+          <li>
+            Performed code inspections on C code to find style violations and potential errors. 
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Geneseo -->
+      <div class="resume-job">
+        <div class="header">
+          <div class="resume-job-header-row">
+            <span class="resume-job-title">Research Assistant, Developer</span>
+            <span class="resume-job-company">SUNY Geneseo Research Foundation</span>
+          </div>
+          <div class="resume-job-header-row">
+            <span class="resume-job-tech">C++, Python, HTML, CSS</span>
+            <span class="resume-job-span">April 2008 - April 2010</span>
+          </div>
+        </div>
+        <div class="resume-job-summary">
+          Worked on a team with one professor and 2 – 3 other students developing the <a href="http://www.geneseo.edu/~baldwin/ivipp/index.html">Interactive Visualizations in Particle Physics (IViPP)</a> program, written in C++.
+        </div>
+        <ul class="resume-job-duty-list">
+          <li>
+            Lead design and development of a Python library to allow users to quickly and easily build complex three dimensional geometries via constructive solid geometry.
+          </li>
+          <li>
+            Worked with physics department at Geneseo and members of the Lab for Laser Energetics at the University of Rochester to identify bugs and develop new features and improvements.
+          </li>
+          <li>
+            Updated IViPP’s user interface from hand built OpenGL to GTK+.
+        </ul>
+      </div>
+  </div>
 
+  <div class="resume-section">
+    <div class="header">Education</div>
+  </div>
+
+
+    <!--
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
       <script>window.jQuery || document.write('<script src="_scripts/jquery-2.1.4.min.js"><\/script>')</script>
 
       <script src="_scripts/resume.js"></script>
-
-      <!-- Google Analytics -->
+    -->
+    <!-- Google Analytics -->
+    <!--
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -111,5 +174,6 @@
         ga('create', 'UA-67543183-1', 'auto');
         ga('send', 'pageview');
       </script>
-    </body>
-    </html></li>
+    -->
+  </body>
+  </html></li>

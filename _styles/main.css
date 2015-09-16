@@ -33,6 +33,14 @@ nav ul li {
 	border-bottom-right-radius: 5px;
 }
 
+.collapsed :not(.header) {
+	display: none;
+}
+
+.collapsed::after {
+	display: none !important;
+}
+
 #header {
 	text-align: center;
 	background-color: #DDDDFF;

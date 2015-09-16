@@ -6,13 +6,13 @@
 	display: none;
 }
 
-.resume-section-header {
+.resume-section>.header {
 	font-variant: small-caps;
 	font-weight: bold;
 
 }
 
-.resume-section-header::after {
+.resume-section>.header::after {
 	content: "";
 	display: block;
 	height: 1px;
@@ -39,8 +39,25 @@
 	font-weight: bold;
 }
 
+.resume-job::after {
+	content: "";
+	display: block;
+	margin: 0.5em auto;
+	height: 1px;
+	width: 75%;
+	background-color: #AAA;
+}
+
+.resume-job-header {
+	margin-bottom: 1em;
+}
+
 .resume-job-title {
 	font-weight: bold;
+}
+
+.resume-job-company {
+	float: right;
 }
 
 .resume-job-span {
@@ -48,27 +65,8 @@
 	float: right;
 }
 
-.resume-job-location {
-	float: right;
-}
-
-.resume-job-tech {
-	margin-top: 1em;
-	margin-bottom: 5px;
-	text-align: center;
-}
-
-.resume-job-tech::after {
-	content: "";
-	display: block;
-	height: 1px;
-	width: 75%;
-	margin: auto;
-	background-color: #AAA;
-}
-
 .resume-job-duty-list {
-	list-style-type: "+";
+	list-style-type: '+';
 	padding-left: 1em;
 }
 
