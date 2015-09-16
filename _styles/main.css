@@ -3,6 +3,10 @@ body {
 	margin: auto;
 }
 
+nav {
+	margin-bottom: 1em;
+}
+
 nav .nav-current {
 	border-color: #DDDDFF;
 	background-color: #DDDDFF;
@@ -45,6 +49,7 @@ nav ul li {
 	text-align: center;
 	background-color: #DDDDFF;
 	padding: 1.5em 0;
+	border-bottom-right-radius: 5px;
 }
 
 #header h1, h2, h3, h4 {
