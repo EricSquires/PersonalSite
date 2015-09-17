@@ -56,7 +56,6 @@ module.exports = function(grunt) {
         tasks: ['jshint:files']
       }
     },
-    clean: ['_site/'],
     copy: {
       site: {
         files: [
@@ -64,6 +63,21 @@ module.exports = function(grunt) {
           {expand: true, src: ['**/*.html', '!node_modules/**/*'], dest: '<%= pkg.outDir %>'}
         ]
       }
+    },
+    less: {
+      build: {
+        options: {
+          paths: ["assets/css"]
+        },
+        files: [
+          {expand: true, src: ['_styles/**/*.less'], dest: '<%= pkg.outDir %>', ext: ".css"}
+        ]
+      }
+    },
+    clean: ['_site/'],
+    cleanempty: {
+      options: {},
+      src: ["_site/**/*"]
     }
   });
 
@@ -74,7 +88,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-cleanempty');
 
   // Default task.
-  grunt.registerTask('default', ['clean', 'jshint', 'uglify', 'copy']);
+  grunt.registerTask('default', ['clean', 'jshint', 'less', 'uglify', 'copy', 'cleanempty']);
 };

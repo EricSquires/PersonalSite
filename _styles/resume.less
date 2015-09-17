@@ -1,3 +1,5 @@
+@import "common.less";
+
 #content {
 	font-family: "Calibri", sans-serif;
 }
@@ -14,7 +16,7 @@
 	font-variant: small-caps;
 	font-weight: bold;
 	font-size: large;
-	color: rgb(46, 116, 181);
+	color: @site-blue;
 }
 
 .resume-section>.header::after {
@@ -23,7 +25,7 @@
 	height: 1px;
 	margin: 0 0 5px 0;
 	background: black;
-	background-color: rgb(46, 116, 181);
+	background-color: @site-blue;
 }
 
 .resume-section::after {
@@ -59,7 +61,7 @@
 }
 
 .resume-job-tech {
-	color: rgb(46, 116, 181);
+	color: @site-blue;
 }
 
 .resume-title {
@@ -73,7 +75,7 @@
 }
 
 .resume-span {
-	color: rgb(46, 116, 181);
+	color: @site-blue;
 	float: right;
 }
 

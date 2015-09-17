@@ -1,3 +1,5 @@
+@import "common.less";
+
 body {
 	width: 800px;
 	margin: auto;
@@ -5,11 +7,13 @@ body {
 
 nav {
 	margin-bottom: 1em;
+	color: @site-blue;
 }
 
-nav .nav-current {
-	border-color: #DDDDFF;
-	background-color: #DDDDFF;
+nav .nav-current :not(:hover) {
+	color: white;
+	border-color: @site-blue;
+	background-color: @site-blue;
 }
 
 nav a {
@@ -19,7 +23,7 @@ nav a {
 }
 
 nav a:hover {
-
+	text-decoration: none;
 }
 
 nav ul {
@@ -32,7 +36,7 @@ nav ul li {
 	display: inline-block;
 	text-align: center;
 	border-style: none solid solid solid;
-	border-color: #DDDDFF;
+	border-color: @site-blue;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
@@ -47,7 +51,8 @@ nav ul li {
 
 #header {
 	text-align: center;
-	background-color: #DDDDFF;
+	background-color: @site-blue;
+	color: white;
 	padding: 1.5em 0;
 	border-bottom-right-radius: 5px;
 }
