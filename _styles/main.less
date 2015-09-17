@@ -1,44 +1,9 @@
 @import "common.less";
+@import "nav.less";
 
 body {
 	width: 800px;
 	margin: auto;
-}
-
-nav {
-	margin-bottom: 1em;
-	color: @site-blue;
-}
-
-nav .nav-current :not(:hover) {
-	color: white;
-	border-color: @site-blue;
-	background-color: @site-blue;
-}
-
-nav a {
-	display: inline-block;
-	text-decoration: none;
-	padding: 5px 20px;
-}
-
-nav a:hover {
-	text-decoration: none;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul li {
-	display: inline-block;
-	text-align: center;
-	border-style: none solid solid solid;
-	border-color: @site-blue;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
 .collapsed :not(.header) {
