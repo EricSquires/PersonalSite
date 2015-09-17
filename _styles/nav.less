@@ -1,0 +1,50 @@
+@import "common.less";
+
+nav {
+	margin-bottom: 1em;
+	background-color: white;
+}
+
+nav.navbar {
+	border-width: 0;
+	border-radius: 0;
+}
+
+nav .nav-current {
+	background-color: @site-blue;
+}
+
+nav .nav-current a {
+	color: white;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+nav li:hover :not(.nav-current) {
+	color: white;
+	background-color:  @site-blue;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: @site-blue;
+	padding: 5px 20px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	text-align: center;
+	border-style: none solid solid solid;
+	border-color: @site-blue;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

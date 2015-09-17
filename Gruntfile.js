@@ -51,9 +51,17 @@ module.exports = function(grunt) {
         files: '<%= pkg.gruntfile %>',
         tasks: ['jshint:gruntfile']
       },
-      files: {
+      jsHint: {
         files: '<%= jshint.files.src %>',
         tasks: ['jshint:files']
+      },
+      copy: {
+        files: ['**/*.html', '!_site/**/*'],
+        tasks: ['copy:site']
+      },
+      less: {
+        files: ['_styles/**/*.less'],
+        tasks: ['less:build']
       }
     },
     copy: {

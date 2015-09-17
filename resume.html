@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,11 +20,12 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body>
+<div class="container">
   <div id="header">
     <h1>Eric Squires</h1>
     <h3>Software Engineer</h3>
   </div>
-  <nav>
+  <nav class="navbar">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li class="nav-current"><a href="resume.html">Résumé</a></li>
@@ -46,24 +47,26 @@
   -->
     <div class="resume-section">
       <div class="header">Technical Strengths</div>
-      <ul class="resume-strengths-list">
-        <li>
-          <span class="resume-strength-title">Computer Languages</span>
-          <span class="resume-strength">C#, VBA, HTML, CSS, JS, Python</span>
-        </li>
-        <li>
-          <span class="resume-strength-title">Libraries</span>
-          <span class="resume-strength">WPF, Telerik WPF controls, Telerik Data Access ORM, jQuery</span>
-        </li>
-        <li>
-          <span class="resume-strength-title">Databases</span>
-          <span class="resume-strength">Oracle</span>
-        </li>
-        <li>
-          <span class="resume-strength-title">Tools</span>
-          <span class="resume-strength">Git, TFS, SVN, Visual Studio, Crystal Reports</span>
-        </li>
-      </ul>
+      <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td class="resume-strength-title">Computer Languages</td>
+          <td class="resume-strength">C#, VBA, HTML, CSS, JS, Python</td>
+        </tr>
+        <tr>
+          <td class="resume-strength-title">Libraries</td>
+          <td class="resume-strength">WPF, Telerik WPF controls, Telerik Data Access ORM, jQuery</td>
+        </tr>
+        <tr>
+          <td class="resume-strength-title">Databases</td>
+          <td class="resume-strength">Oracle</td>
+        </tr>
+        <tr>
+          <td class="resume-strength-title">Tools</td>
+          <td class="resume-strength">Git, TFS, SVN, Visual Studio, Crystal Reports</td>
+        </tr>
+      </tbody>
+      </table>
     </div>
 
     <div class="resume-section">
@@ -170,6 +173,7 @@
       </div>
       <span class="resume-span">2009</span>
     </div>
+  </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
