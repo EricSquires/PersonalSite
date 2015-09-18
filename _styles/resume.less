@@ -4,6 +4,10 @@
 	font-family: "Calibri", sans-serif;
 }
 
+.row-fluid>div {
+	padding: 0;
+}
+
 .resume-header {
 	text-align: center;
 }
@@ -15,7 +19,6 @@
 .resume-section>.header {
 	font-variant: small-caps;
 	font-weight: bold;
-	font-size: large;
 	color: @site-blue;
 }
 
@@ -48,6 +51,11 @@
 	margin-bottom: 1em;
 }
 
+.resume-job-summary {
+	clear: both;
+	padding-top: 1em;
+}
+
 .resume-job:not(:last-child)::after {
 	content: "";
 	display: block;
@@ -58,22 +66,22 @@
 }
 
 .resume-job-tech {
-	color: @site-blue;
 }
 
 .resume-title {
 	font-variant: small-caps;
-	font-size: large;
 }
 
 .resume-org {
 	float: right;
 	font-variant: small-caps;
+	padding-left: 1em;
 }
 
 .resume-span {
-	color: @site-blue;
+	font-style: italic;
 	float: right;
+	padding-left: 1em;
 }
 
 .resume-job-duty-list {
