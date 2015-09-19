@@ -19,7 +19,8 @@
     "grunt-html-validation": "^0.1.18",
     "grunt-htmllint": "^0.2.7",
     "grunt-contrib-copy": "~0.8.1",
-    "grunt-contrib-clean": "~0.6.0"
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-includes": "~0.5.1"
   },
   "outDir": "_site",
   "gruntfile": "Gruntfile.js"
