@@ -68,6 +68,7 @@ module.exports = function(grunt) {
       site: {
         files: [
           {expand: true, src: ['_styles/**/*.css'], dest: '<%= pkg.outDir %>'},
+          {expand: true, src: ['_files/**/*'], dest: '<%= pkg.outDir %>'},
           {expand: true, src: ['**/*.html', '!node_modules/**/*'], dest: '<%= pkg.outDir %>'}
         ]
       }
