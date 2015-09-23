@@ -11,20 +11,13 @@ a:hover {
 	text-decoration: none;
 }
 
-.collapsed :not(.header) {
-	display: none;
-}
-
-.collapsed::after {
-	display: none !important;
-}
-
-header, footer {
+.page-header, .page-footer {
 	text-align: center;
 	background-color: @site-blue;
 	color: white;
-	padding: 1.5em 0;
+	padding: 10px;
 	margin-bottom: 0;
+	border-width: 0;
 	
 	h1, h2, h3, h4 {
 		margin: 0;
@@ -43,26 +36,26 @@ header, footer {
 	}
 }
 
-header {
+.page-header {
 	border-top-left-radius: @hf-border-radius;
 	border-top-right-radius: @hf-border-radius;
 }
 
-footer {
+.page-footer {
 	clear: both;
 	border-bottom-left-radius: @hf-border-radius;
 	border-bottom-right-radius: @hf-border-radius;
 }
 
-body>.container {
-	padding: 0;
-	border-radius: @hf-border-radius;
+main {
+	padding: 1em;
 	border-left: 1px solid @site-blue;
 	border-right: 1px solid @site-blue;
-}
-
-main {
-	padding: 0 1em;
+	
+	:last-child {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
 }
 
 ul.inline-piped {
@@ -91,5 +84,15 @@ ul.inline-piped {
 	
 	h1, h2, h3, h4, h5 {
 		margin: 0;
+	}
+}
+
+@uncollapsed-svg: "<svg width='1' height='1'><polygon points='0,0 1,0.5 1,0'/></svg>";
+
+input[type="checkbox"][data-toggle="collapse"] {
+	-webkit-appearance: none;
+	
+	:before {
+		content: @uncollapsed-svg;
 	}
 }

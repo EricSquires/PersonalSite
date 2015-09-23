@@ -1,5 +1,9 @@
 @import "common.less";
 
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
 #content {
 	font-family: "Calibri", sans-serif;
 }
@@ -16,22 +20,23 @@
 	display: none;
 }
 
-.resume-section>.header {
+.resume-section>header {
 	font-variant: small-caps;
 	font-weight: bold;
 	color: @site-blue;
-}
-
-.resume-section>.header::after {
-	content: "";
-	display: block;
-	height: 1px;
-	margin: 0 0 5px 0;
-	background: black;
-	background-color: @site-blue;
+	
+	::after {
+		content: "";
+		display: block;
+		height: 1px;
+		margin: 0 0 5px 0;
+		background: black;
+		background-color: @site-blue;
+	}
 }
 
 .resume-section::after {
+	clear: both;
 	content: "";
 	display: block;
 	margin-bottom: 1em;
@@ -63,9 +68,6 @@
 	height: 1px;
 	width: 75%;
 	background-color: #AAA;
-}
-
-.resume-job-tech {
 }
 
 .resume-title {
