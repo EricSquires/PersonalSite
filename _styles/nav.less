@@ -1,7 +1,6 @@
 @import "common.less";
 
 nav {
-	margin-bottom: 1em;
 	background-color: white;
 	
 	.nav-current {
@@ -17,10 +16,10 @@ nav {
 		text-decoration: none;
 		color: @site-blue;
 		padding: 5px 20px;
-		
-		:hover {
-			text-decoration: none;
-		}
+	}
+	
+	a:hover {
+		text-decoration: none;
 	}
 	
 	li:hover :not(.nav-current) {
@@ -38,13 +37,12 @@ nav {
 			text-align: center;
 			border-style: none solid solid solid;
 			border-color: @site-blue;
-			border-bottom-left-radius: 5px;
-			border-bottom-right-radius: 5px;
 		}
 	}
 }
 
 nav.navbar {
+	margin: 0;
 	border-width: 0;
 	border-radius: 0;
 }
