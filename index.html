@@ -10,8 +10,10 @@
   <title>Eric Squires</title>
   
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="_styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="_styles/bootstrap-social.css"/>
   <link rel="stylesheet" type="text/css" href="_styles/main.css"/>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
@@ -19,26 +21,31 @@
 <div class="container">
   include "header.html"
   
-  <nav class="navbar">
-    <ul>
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
       <li class="nav-current"><a href="index.html">Home</a></li>
       <li><a href="resume.html">Résumé</a></li>
       <li><a href="about.html">About the Site</a></li>
     </ul>
   </nav>
   <main id="content">
-    <p>
-      I've decided to put together a personal site in order to throw some of my development thoughts up somewhere as well as offer a diversion from the problems I've been working through in <a href="http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850">Cracking the Coding Interview 6<sup>th</sup> Edition</a>. When I started this project, it had been a few weeks straight of putting in time every day working through problems in the book. I do best when I'm working on a variety of things so it was about time to tackle something completely different.
-    </p>
-    <p>
-      If you're interested in the tech that went into this site, you can refer to the <a href="about.html">about the site</a> page. There's the <a href="resume.html">résumé</a> page which is self explanatory. In the future, I hope to add a blog component, but I want to try to write that portion myself since it's not a particularly pressing need and it should be a nice project to tackle.
-    </p>
-    <p>
-      Please feel free to contact me on <a href="https://github.com/EricSquires">GitHub</a> or <a href="https://www.linkedin.com/in/erichsquires">LinkedIn</a> - links to these can be found in the footer of any page.
-    </p>
+    <div class="row">
+      <div class="panel col-sm-4">
+        <h3 class="panel-title">About Me</h3>
+        <p>
+          I'm a software engineer seeking a challenging, collaborative environment where I can work with other engineers. After 4 years as the only developer at Schneider Packaging, it was time for a change so I moved from Syracuse, NY to Boulder in search of new opportunities.
+        </p>
+      </div>
+      <div class="panel col-sm-8">
+        <h3 class="panel-title">Skills</h3>
+        <ul>
+          <li>C#</li>
+          <li>WPF</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+    </div>
   </main>
-
-  include "footer.html"
 </div>
 </body>
 </html>

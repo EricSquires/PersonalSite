@@ -61,7 +61,7 @@ module.exports = function(grunt) {
       },
       less: {
         files: ['_styles/**/*.less'],
-        tasks: ['clean:css', 'less:build']
+        tasks: ['clean:css', 'less:build', 'copy:css']
       }
     },
     copy: {
@@ -71,6 +71,9 @@ module.exports = function(grunt) {
           {expand: true, src: ['_files/**/*'], dest: '<%= pkg.outDir %>'},
           {expand: true, src: ['**/*.html', '!node_modules/**/*'], dest: '<%= pkg.outDir %>'}
         ]
+      },
+      css: {
+        files: [{expand: true, src: ['_styles/**/*.css'], dest: '<%= pkg.outDir %>'}]
       }
     },
     less: {
@@ -79,7 +82,7 @@ module.exports = function(grunt) {
           paths: ["assets/css"]
         },
         files: [
-          {expand: true, src: ['_styles/**/*.less'], dest: '<%= pkg.outDir %>', ext: ".css"}
+          {expand: true, src: ['_styles/**/*.less', '!_styles/common.less', '!_styles/variables.less'], dest: '<%= pkg.outDir %>', ext: ".css"}
         ]
       }
     },
@@ -113,5 +116,5 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', ['clean', 'jshint', 'less', 'uglify', 'build-html', 'cleanempty']);
-  grunt.registerTask('build-html', ['clean:html', 'copy', 'includes']);
+  grunt.registerTask('build-html', ['clean:html', 'copy:site', 'includes']);
 };

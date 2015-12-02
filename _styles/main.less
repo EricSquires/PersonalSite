@@ -1,56 +1,23 @@
 @import "common.less";
-@import "nav.less";
 
-@hf-border-radius: 5px;
-
-a {
-	text-decoration: underline;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-.page-header, .page-footer {
-	text-align: center;
-	background-color: @site-blue;
-	color: white;
-	padding: 10px;
-	margin-bottom: 0;
-	border-width: 0;
-	
-	h1, h2, h3, h4 {
+.jumbotron {
+	h1, h2 {
 		margin: 0;
 	}
-	
-	a {
-		color: white;
-	}
-	
-	a:hover {
-		color: white;
-	}
-	
-	ul.inline-piped li {
-		border-color: white;
-	}
 }
 
-.page-header {
-	border-top-left-radius: @hf-border-radius;
-	border-top-right-radius: @hf-border-radius;
+hr.short {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
-.page-footer {
-	clear: both;
-	border-bottom-left-radius: @hf-border-radius;
-	border-bottom-right-radius: @hf-border-radius;
-}
-
-main {
-	padding: 1em;
-	border-left: 1px solid @site-blue;
-	border-right: 1px solid @site-blue;
+.well {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	
+	h1, h2, h3, h4, h5 {
+		margin: 0;
+	}
 	
 	:last-child {
 		padding-bottom: 0;
@@ -58,33 +25,8 @@ main {
 	}
 }
 
-ul.inline-piped {
-	display: inline-block;
-	border-collapse: collapse;
-	padding: 0;
-	margin: 0;
-	
-	li {
-		display: table-cell;
-		list-style-type: none;
-		border-color: @site-blue;
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-	
-	li:not(:first-child) {
-		border-left-style: solid;
-		border-left-width: 1px;
-	}
-	
-	li:not(:last-child) {
-		border-right-style: solid;
-		border-right-width: 1px;
-	}
-	
-	h1, h2, h3, h4, h5 {
-		margin: 0;
-	}
+.valign {
+	vertical-align: auto;
 }
 
 @uncollapsed-svg: "<svg width='1' height='1'><polygon points='0,0 1,0.5 1,0'/></svg>";
