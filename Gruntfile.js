@@ -36,14 +36,15 @@ module.exports = function(grunt) {
         browser: true,
         globals: {
           jQuery: true,
-          $: false
+          $: false,
+          GitHubActivity: false
         }
       },
       gruntfile: {
         src: '<%= pkg.gruntfile %>'
       },
       files: {
-        src: ['src/**/*.js']
+        src: ['src/**/*.js', '!src/**/github-activity.js']
       }
     },
     watch: {
@@ -51,9 +52,9 @@ module.exports = function(grunt) {
         files: '<%= pkg.gruntfile %>',
         tasks: ['jshint:gruntfile']
       },
-      jsHint: {
-        files: '<%= jshint.files.src %>',
-        tasks: ['jshint:files']
+      js: {
+        files: 'src/**/*.js',
+        tasks: ['jshint:files', 'uglify']
       },
       html: {
         files: ['**/*.html', '!_site/**/*'],

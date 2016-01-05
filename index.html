@@ -14,13 +14,15 @@
 
   <link rel="stylesheet" href="_styles/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="_styles/bootstrap-social.css"/>
-  <link rel="stylesheet" type="text/css" href="_styles/main.css"/>
+  <link rel="stylesheet" type="text/css" href="_styles/theme.css"/>
+  <link rel="stylesheet" type="text/css" href="_styles/github-activity.css"/>
+  <!--<link rel="stylesheet" type="text/css" href="_styles/main.css"/>-->
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body>
-<div class="container">
   include "header.html"
   
+  <!--
   <nav class="navbar navbar-default">
     <ul class="nav navbar-nav">
       <li class="nav-current"><a href="index.html">Home</a></li>
@@ -28,24 +30,109 @@
       <li><a href="about.html">About the Site</a></li>
     </ul>
   </nav>
+  -->
+  
   <main id="content">
-    <div class="row">
-      <div class="panel col-sm-4">
-        <h3 class="panel-title">About Me</h3>
-        <p>
-          I'm a software engineer seeking a challenging, collaborative environment where I can work with other engineers. After 4 years as the only developer at Schneider Packaging, it was time for a change so I moved from Syracuse, NY to Boulder in search of new opportunities.
-        </p>
+      <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I'm a software engineer seeking a challenging, collaborative environment where I can work with other engineers. After 4 years as the only developer at Schneider Packaging, it was time for a change so I moved from Syracuse, NY to Boulder in search of new opportunities.</p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section>
+                
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Coderwall profile so people can get more info there.</p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">C#, WPF<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="95%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Oracle<span class="level-label">Proficient</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML5, CSS3, LESS, JS, jQuery<span class="level-label">Comfortable</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="70%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Python, C++<span class="level-label">Proficient, but rusty</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="50%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <!--<p><a class="more-link" href="#"><i class="fa fa-external-link"></i> More on Coderwall</a></p>-->
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Software Engineer <span class="place">at <a href="http://www.schneiderequip.com/">Schneider Packaging Equipment</a></span> <span class="year">(2011 - 2015)</span></h3>
+                                <p>As sole developer for a medium sized business, I was responsible for working with employees across the breadth of the company to identify areas for improvement, assess business needs, gather requirements and get feedback on projects as they’re developed. Developed several WPF applications on top of an Oracle database as well as company libraries for easy code reuse in both C# and VB.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software Tester <span class="place">at The Software Specialists</span> <span class="year">(2010 - 2011)</span></h3>
+                                <p>Primary tasks were developing, executing and verifying automated and manual test results. Additionally performed code reviews, worked with developers and architects to troubleshoot issues and advised colleagues on proper testing methodologies.</p>
+                            </div><!--//item-->
+                            
+                            <div class="item">
+                                <h3 class="title">Research Assistant/Developer <span class="place">at <a href="http://www.geneseo.edu/">SUNY Geneseo</a></span> <span class="year">(2008 - 2010)</span></h3>
+                                <p>Worked closely with members of Geneseo's physics department, members of the <a href="http://www.lle.rochester.edu/">Lab for Laser Energetics</a> at the University of Rochester, other student developers and our advisor to develop the IViPP data visualization tool.</p>
+                                <p>Lead design and development of a Python library to allow users to quickly and easily build complex three dimensional geometries via constructive solid geometry.</p>
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+            
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>Activity feed available thanks to the handy <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget
+                                            
+                        <div id="ghfeed">
+                        </div><!--//ghfeed-->
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div>
+        </div>
       </div>
-      <div class="panel col-sm-8">
-        <h3 class="panel-title">Skills</h3>
-        <ul>
-          <li>C#</li>
-          <li>WPF</li>
-          <li>SQL</li>
-        </ul>
-      </div>
-    </div>
   </main>
-</div>
+  
+  include "footer.html"
 </body>
 </html>
