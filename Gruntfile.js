@@ -63,6 +63,10 @@ module.exports = function(grunt) {
       less: {
         files: ['_styles/**/*.less'],
         tasks: ['clean:css', 'less:build', 'copy:css']
+      },
+      css: {
+        files: ['_styles/**/*.css'],
+        tasks: ['copy:css']
       }
     },
     copy: {
