@@ -11,12 +11,13 @@
   
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="_styles/github-activity.css"/>
 
   <link rel="stylesheet" href="_styles/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="_styles/bootstrap-social.css"/>
   <link rel="stylesheet" type="text/css" href="_styles/theme.css"/>
-  <link rel="stylesheet" type="text/css" href="_styles/github-activity.css"/>
-  <!--<link rel="stylesheet" type="text/css" href="_styles/main.css"/>-->
+  <link rel="stylesheet" type="text/css" href="_styles/main.css"/>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
 <body>
@@ -40,7 +41,7 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I'm a software engineer seeking a challenging, collaborative environment where I can work with other engineers. After 4 years as the only developer at Schneider Packaging, it was time for a change so I moved from Syracuse, NY to Boulder in search of new opportunities.</p>
+                            <p>I'm a software engineer seeking a challenging, collaborative environment. After 4 years as the only developer at Schneider Packaging, it was time for a change so I moved from Syracuse, NY to Boulder in search of new opportunities.</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section>
@@ -121,9 +122,9 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>Activity feed available thanks to the handy <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget
+                        <p>Activity feed available thanks to the handy <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget!
                                             
-                        <div id="ghfeed">
+                        <div id="ghfeed" class="ghfeed">
                         </div><!--//ghfeed-->
                         
                     </div><!--//secton-inner-->
@@ -134,5 +135,8 @@
   </main>
   
   include "footer.html"
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+  <script src="_scripts/common.min.js"></script>
 </body>
 </html>

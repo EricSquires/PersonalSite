@@ -1,34 +1,5 @@
 @import "common.less";
 
-hr.short {
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.well {
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	
-	h1, h2, h3, h4, h5 {
-		margin: 0;
-	}
-	
-	:last-child {
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-}
-
-.valign {
-	vertical-align: auto;
-}
-
-@uncollapsed-svg: "<svg width='1' height='1'><polygon points='0,0 1,0.5 1,0'/></svg>";
-
-input[type="checkbox"][data-toggle="collapse"] {
-	-webkit-appearance: none;
-	
-	:before {
-		content: @uncollapsed-svg;
-	}
+.profile-content a:hover {
+    text-decoration: none;
 }
